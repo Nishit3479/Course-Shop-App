@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Gateway</title>
+        <link rel="stylesheet" href="style.css">
+	      <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body{
+              background-image: linear-gradient(to right,#000000,#5a5157,#000000);
+          }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+    </body>
+    <div class="payment" id="payment">
+      <form class="pyform">
+        <div class="d4">
+          <h2 style="text-align: center;">Payment Gateway</h2>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div><br>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cname" placeholder="Nishit Verma">
+          <label for="dnum">Debit card number</label>
+          <input type="text" id="dnum" name="dnum" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">Exp Month</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="July">
+          <div class="row">
+            <div class="col-50">
+              <label for="expyear">Exp Year</label>
+              <input type="text" id="expyear" name="expyear" placeholder="2023">
+            </div>
+            <div class="col-50">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="777">
+            </div>
+          </div>
+          <h2 style="text-align: center;">Total : ₹xxx</h2>
+          <button type="submit" class="bt3">Proceed to Pay</button>
+          <button type="button" class="bt4" onclick="window.location.href='home.html'">Cancel</button>
+        </div>
+      </form>
+    </div>
+    </body>
+</html>

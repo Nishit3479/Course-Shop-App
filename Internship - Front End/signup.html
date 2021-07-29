@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Shop App - Sign up</title>
+        <link rel="stylesheet" href="style.css">
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            function viewpass() {
+              var x = document.getElementById("pass1");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="topnav">
+            <a class="active" href="index.html">Home</a>&emsp;
+            <a href="About.html">About us</a>&emsp;
+            <a href="#Contact">Contact</a>&emsp;
+        </div>
+        <div id="d">
+          <p id="p1">Welcome To</p>
+          <h1 class="ml15">
+            <span class="text-wrapper">
+              <span class="letters" style="color: white;">Course Shop App</span>
+              <span class="line"></span>
+            </span>
+          </h1><br>
+          <p id="p2">Explore a whole new world of learning..!!</p>
+        </div>
+
+    <div id="d1" style="margin-right: 10%;">
+        <form method="POST">
+        <H1 id="head1">Sign up</H1>
+        <label for="name">Name :</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+        <label for="cno">Contact number :</label><br>
+		<input type="text" name="cno" id="cno" placeholder="Enter Contact number" required><br><br>
+        <label for="email">Email :</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter Email" required><br><br> 
+        <label for="col">College/University :</label><br>
+		<input type="text" name="col" id="col" placeholder="Enter College" required><br><br>
+        <label for="name">User Id :</label><br>
+        <input type="text" id="uname" name="uname" placeholder="Enter User Name" required><br><br>
+        <label for="pass">Password :</label><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter Password" required><br><br>
+        <label for="pass1">Re-Enter Password :</label><br>
+        <input type="password" id="pass1" name="pass1" placeholder="Re-Enter Password" required><br><br>
+        <input type="checkbox" id="sp" onclick="viewpass()">Show Password<br><br>
+        <input type="submit" id="bt1" name="bt1" class="bt1" value="Submit"/>
+        <p id = pr style="text-align : center">Already Registered ? <a href="index.html" style="text-decoration: none; color: red;">Sign in</a></p>
+        </form>
+    </div><br><br><br><br>
+
+    <div id="Contact">
+        <h1 class="ml14">
+          <span class="text-wrapper">
+            <span class="letters" style="color: white;">Course Shop App</span>
+            <span class="line"></span>
+          </span>
+        </h1><br>
+        <script>
+          var textWrapper = document.querySelector('.ml14 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+          anime.timeline({loop: true})
+          .add({
+            targets: '.ml14 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeInOutExpo",
+            duration: 900
+          }).add({
+            targets: '.ml14 .letter',
+            opacity: [0,1],
+            translateX: [40,0],
+            translateZ: 0,
+            scaleX: [0.3, 1],
+            easing: "easeOutExpo",
+            duration: 800,
+            offset: '-=600',
+          delay: (el, i) => 150 + 25 * i
+          }).add({
+            targets: '.ml14',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
+        <a href="https://www.facebook.com/education4ol4" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.linkedin.com/company/education-4-ol/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.instagram.com/education_4_ol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;<br>
+        <p>Educa</p>
+      </div>
+    </body>
+</html>

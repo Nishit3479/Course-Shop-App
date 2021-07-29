@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Shop App - Home</title>
+        <link rel="stylesheet" href="style.css">
+	      <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <style>
+            body{
+                background-image: url("image-3.jpg");
+            }
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 50px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+            }
+
+            .modal-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                border: 1px solid #888;
+                width: 80%;
+                height: 90%;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 0.4s
+            }
+
+            @-webkit-keyframes animatetop {
+                from {top:-300px; opacity:0} 
+                to {top:0; opacity:1}
+            }
+
+            @keyframes animatetop {
+                from {top:-300px; opacity:0}
+                to {top:0; opacity:1}
+            }
+
+            #close {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            #close:hover, #close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .modal-header {
+                padding: 2px 16px;
+                background-color: #000000;
+                color: white;
+            }
+
+            .modal-body {
+                padding: 2px 16px;
+            }
+
+            .modal-footer {
+                padding: 2px 16px;
+                background-color: #000000;
+                color: white;
+            } 
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).on('scroll', function(){
+              if ( $(window).scrollTop() > 300) {
+                $("#topnav a").css("background-color", "rgb(0,0,0,0.5");
+                $("#topnav a").css("color", "rgb(255,255,255,1");
+                $("#topnav a i").css("color", "rgb(255,255,255,1");
+              } else {
+                $("#topnav a").css("background-color", "transparent");
+              }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="topnav" style="margin-left: 35%;">
+            <a class="active" href="home.html">Home</a>&emsp;
+            <a href="About2.html">About us</a>&emsp;
+            <a href="#Contact">Contact</a>&emsp;
+            <a href="profile.html"><i style="font-size:24px" class="fa">&#xf2be;</i></a>
+        </div><br>
+        
+        <div class="wrapper" id="typing">
+            <div class="typing">
+              Welcome to Course Shop App..!!
+            </div>
+        </div>
+
+        <H1 id="head2">Technical Courses</H1>
+        <div class="wrapper" id="card1">
+            <div class="cards_wrap">
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod1(); return false;"><img id="card" src="Sec.jpg" alt="Introduction to Cyber Security"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Cyber Security
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod1(); return false;" style="text-decoration: none;">Introduction to Cyber Security</a></p>
+                      <p>
+                        A course for beginners to learn about Cyber Security.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close1" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Cyber Security</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="Sec.jpg" alt="Introduction to Cyber Security" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">The Introduction to Cyber Security course is designed to help learners develop a deeper understanding of modern information and system protection technology and methods.<br>The learning outcome is simple: We hope learners will develop a lifelong passion and appreciation for cyber security, which we are certain will help in future endeavors. Students, developers, managers, engineers, and even private citizens will benefit from this learning experience.<br>Special customized interviews with industry partners were included to help connect the cyber security concepts to live business experiences.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+
+            <script>
+                function mod1() {
+                  var modal = document.getElementById("myModal1");
+                  var span = document.getElementsByClassName("close1")[0];
+                  modal.style.display = "block";
+                              
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod2(); return false;"><img id="card" src="cs-1.jpg" alt="Risk Management"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Cyber Security
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod2(); return false;" style="text-decoration: none;">Risk Management</a></p>
+                      <p>
+                        An overview of risk and management principles and practices.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close2" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Risk Management</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="cs-1.jpg" alt="Risk Management" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹250</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you will gain a solid understanding of risk management principles, processes, frameworks and techniques that can be applied specifically to cyber security as well as risk in general.<br>You will learn how to identify, assess and articulate risk as well as options available for treating risk and which may be most appropriate for your situation.<br>This course also provides examples of tools and techniques as well as useful tips that can help you to successfully implement and maintain a risk management framework within your organization.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod2() {
+                  var modal = document.getElementById("myModal2");
+                  var span = document.getElementsByClassName("close2")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod3(); return false;"><img id="card" src="malware1.jpg" alt="Vulnerability Assessment"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Cyber Security
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod3(); return false;" style="text-decoration: none;">Vulnerability Assessment</a></p>
+                      <p>
+                        Identify and analyze exposures and weaknesses in web applications.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close3" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Vulnerability Assessment</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="malware1.jpg" alt="Vulnerability Assessment" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹350</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this Vulnerability Assessment course, you will learn how to create a network security vulnerability assessment checklist by exposing infrastructure, server, and desktop vulnerabilities, create and interpret reports, configure vulnerability scanners, detect points of exposure, and ultimately prevent network exploitation.<br>To minimize costly security breaches, organizations need to evaluate the risk in their enterprise from an array of vulnerabilities. Purchase this course and learn to minimize your organization's exposure to security breaches.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod3() {
+                  var modal = document.getElementById("myModal3");
+                  var span = document.getElementsByClassName("close3")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod4(); return false;"><img id="card" src="webdev.jpg" alt="Basics of Web Development"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Web Development
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod4(); return false;" style="text-decoration: none;">Basics of Web Development</a></p>
+                      <p>
+                        A course for beginners to learn the basics of HTML, CSS and Java Script.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close4" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Basics of Web Development</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="webdev.jpg" alt="Basics of Web Development" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">This course is designed to start you on a path toward future studies in web development and design, no matter how little experience or technical knowledge you currently have.<br>By the end of this course you’ll be able to describe the structure and functionality of the world wide web, create dynamic web pages using a combination of HTML, CSS, and JavaScript, apply essential programming language concepts when creating HTML forms, select an appropriate web hosting service, and publish your webpages for the world to see. Finally, you’ll be able to develop a working model for creating your own personal or business websites in the future.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod4() {
+                  var modal = document.getElementById("myModal4");
+                  var span = document.getElementsByClassName("close4")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod5(); return false;"><img id="card" src="react.png" alt="Front-End Web Dev with ReactJS"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Web Development
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod5(); return false;" style="text-decoration: none;">Introduction to ReactJS</a></p>
+                      <p>
+                        A course to learn the front-end Web Develpment using ReactJS.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close5" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Front-End Web Dev with ReactJS</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="react.png" alt="Front-End Web Dev with ReactJS" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹200</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">This course explores Javascript based front-end application development, and in particular the React library (Currently Ver. 16.3). This course will use JavaScript ES6 for developing React application. You will also get an introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design. You will be introduced to various aspects of React components. You will learn about React router and its use in developing single-page applications.<br>You will be introduced to the Flux architecture and designing controlled forms. You will explore various aspects of Redux and use it to develop React-Redux powered applications. A good working knowledge of Bootstrap 4 and JavaScript, especially ES 5 is strongly recommended.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod5() {
+                  var modal = document.getElementById("myModal5");
+                  var span = document.getElementsByClassName("close5")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod6(); return false;"><img id="card" src="ds.jpg" alt="Introduction to Data Science"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Data Science
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod6(); return false;" style="text-decoration: none;">Introduction to Data Science</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Data Science.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close6" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Data Science</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="ds.jpg" alt="Introduction to Data Science" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you will describe what data science and machine learning are, their applications & use cases, and various types of tasks performed by data scientists.<br>Gain hands-on familiarity with common data science tools including JupyterLab, R Studio, GitHub and Watson Studio.<br>Develop the mindset to work like a data scientist, and follow a methodology to tackle different types of data science problems.<br>Write SQL statements and query Cloud databases using Python from Jupyter notebooks.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod6() {
+                  var modal = document.getElementById("myModal6");
+                  var span = document.getElementsByClassName("close6")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod7(); return false;"><img id="card" src="DL.jpg" alt="Introduction to AI"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Artificial Intelligence
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod7(); return false;" style="text-decoration: none;">Introduction to AI</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Artificial Intelligence.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal7" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close7" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to AI</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="DL.jpg" alt="Introduction to AI" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you will learn what Artificial Intelligence (AI) is, explore use cases and applications of AI, understand AI concepts and terms like machine learning, deep learning and neural networks. You will be exposed to various issues and concerns surrounding AI such as ethics and bias, & jobs, and get advice from experts about learning and starting a career in AI. You will also demonstrate AI in action with a mini project.<br>This course does not require any programming or computer science expertise and is designed to introduce the basics of AI to anyone whether you have a technical background or not.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod7() {
+                  var modal = document.getElementById("myModal7");
+                  var span = document.getElementsByClassName("close7")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod8(); return false;"><img id="card" src="ML.jpg" alt="Machine Learning"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Artificial Intelligence
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod8(); return false;" style="text-decoration: none;">Machine Learning</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Machine Learning.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal8" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close8" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Machine Learning</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="ML.jpg" alt="Machine Learning" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹300</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems.<br>The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning algorithms in building smart robots (perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining, and other areas.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod8() {
+                  var modal = document.getElementById("myModal8");
+                  var span = document.getElementsByClassName("close8")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod9(); return false;"><img id="card" src="java.png" alt="Introduction to Java"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Computer Programming
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod9(); return false;" style="text-decoration: none;">Introduction to Java</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Java.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal9" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close9" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Java</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="java.png" alt="Introduction to Java" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Java is one of the most popular programming languages owned by Oracle. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.<br>This course includes hands-on practice and will give you a solid knowledge of the Java language. After completing this course, you will be able to identify Java’s benefits, program in basic Java syntax using Java data types, and incorporate branches, loops and functions.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod9() {
+                  var modal = document.getElementById("myModal9");
+                  var span = document.getElementsByClassName("close9")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod10(); return false;"><img id="card" src="python.png" alt="Introduction to Python"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Computer Programming
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod10(); return false;" style="text-decoration: none;">Introduction to Python</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Python. 
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal10" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close10" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Python</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="python.png" alt="Introduction to Python" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹100</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation.<br>This course provides an introduction to programming and the Python language. Students are introduced to core programming concepts like data structures, conditionals, loops, variables, and functions. This course includes an overview of the various tools available for writing and running Python, and gets students coding quickly. It also provides hands-on coding exercises using commonly used data structures, writing custom functions, and reading and writing to files.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod10() {
+                  var modal = document.getElementById("myModal10");
+                  var span = document.getElementsByClassName("close10")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod11(); return false;"><img id="card" src="mappdev.jpg" alt="Basics of App Development"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      App Development
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod11(); return false;" style="text-decoration: none;">Basics of App Development</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Mobile App Development.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal11" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close11" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Basics of App Development</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="mappdev.jpg" alt="Basics of App Development" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹250</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you will learn how to download, install and configure the necessary softwares, Creating new Projects in Android studio and using it's components, publishing your apps on Google play store and more.<br>By the end of this course you will be able to develop apps and games using Android studio, link your apps with databases and work with the databases, use firebase to develop realtime apps.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod11() {
+                  var modal = document.getElementById("myModal11");
+                  var span = document.getElementsByClassName("close11")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+            </div>
+          </div><br><br>
+
+
+          <H1 id="head2">Non - Technical Courses </H1>
+
+        <div class="wrapper" id="card2">
+            <div class="cards_wrap">
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod12(); return false;"><img id="card" src="m-1.png" alt="Strategic Leadership and Management"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Management
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod12(); return false;" style="text-decoration: none;">Strategic Leadership and Management</a></p>
+                      <p>
+                        A course to learn Leadership and Business Management Skills.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal12" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close12" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Strategic Leadership and Management</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="m-1.png" alt="Strategic Leadership and Management" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹350</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this Strategic Leadership and Management course, you will learn the fundamentals of effectively leading people, teams, and organizations and develop tools to analyze business situations. In addition to building a conceptual framework for leadership, learners will develop and practice strategies for immediate impact.<br>The course covers the strategic, human resource, and organizational foundations for creating and capturing value for sustainable competitive advantage both within a single business and across a portfolio of businesses.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod12() {
+                  var modal = document.getElementById("myModal12");
+                  var span = document.getElementsByClassName("close12")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod13(); return false;"><img id="card" src="m-2.jfif" alt="Foundations of Business Management"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Management
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod13(); return false;" style="text-decoration: none;">Foundations of Business Management</a></p>
+                      <p>
+                        A course for beginners to learn the basics of Business Management.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal13" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close13" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Foundations of Business Management</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="m-2.jfif" alt="Foundations of Business Management" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹300</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Good management is equal parts knowing and doing. No matter what industry you work in or where you are in your career, a basic understanding of financial, marketing and decision-making principles and other management fundamentals will help you achieve your professional goals - be it getting promoted in your current job, getting ready for a MBA program, or starting your own company.<br>This course will give you a comprehensive introduction to the practice of management through the lens of four key disciplines: accounting, finance, marketing, and organizational behavior. In this course, you'll analyze real business cases from these four perspectives.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod13() {
+                  var modal = document.getElementById("myModal13");
+                  var span = document.getElementsByClassName("close13")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod14(); return false;"><img id="card" src="s-1.jfif" alt="Introduction to Stock Marketing from scratch"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Finance
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod14(); return false;" style="text-decoration: none;">Introduction to Stock Marketing from scratch</a></p>
+                      <p>
+                        A course to learn the basics of Stock Marketing and Investment.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal14" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close14" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Stock Marketing from scratch</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="s-1.jfif" alt="Introduction to Stock Marketing from scratch" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹350</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In this course you'll learn terms, concepts, and ideas like technical indicators, the difference between types of financial instruments, how to choose the correct broker, and much more.<br>We have used many real-life examples in this course. This course will help you to start from the very basic level of trading to a level where you can be capable of working everything out on your own. All you need is a computer and an internet connection to get started. </p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod14() {
+                  var modal = document.getElementById("myModal14");
+                  var span = document.getElementsByClassName("close14")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod15(); return false;"><img id="card" src="f-1.jpg" alt="Financial Engineering and Risk Management"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Finance
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod15(); return false;" style="text-decoration: none;">Financial Engineering and Risk Management</a></p>
+                      <p>
+                        A course to learn about Financial Engg and Business Risk Management. 
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal15" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close15" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Financial Engineering and Risk Management</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="f-1.jpg" alt="Financial Engineering and Risk Management" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹350</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Financial Engineering is a multidisciplinary field drawing from finance and economics, mathematics, statistics, engineering and computational methods. In this course we will teach the use of simple stochastic models to price derivative securities in various asset classes including equities, fixed income, credit and mortgage-backed securities. We will also consider the role that some of these asset classes played during the financial crisis.<br>We hope that students who complete the course will begin to understand the limitations of this theory in practice and why financial models should always be treated with a healthy degree of skepticism. In this course we will also continue to develop derivatives pricing models.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod15() {
+                  var modal = document.getElementById("myModal15");
+                  var span = document.getElementsByClassName("close15")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod16(); return false;"><img id="card" src="p-1.jpg" alt="Introduction to Psychology in Business"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Psychology
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod16(); return false;" style="text-decoration: none;">Introduction to Psychology in Business</a></p>
+                      <p>
+                        A course to learn and apply the basics of Psychology in Business.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal16" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close16" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Psychology in Business</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="p-1.jpg" alt="Introduction to Psychology in Business" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹300</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Business Psychology is the study and practice of improving working life. It combines an understanding of the science of human behaviour with experience of the world of work to attain effective and sustainable performance for both individuals and organisations.<br>This course will help you in increasing your critical thinking and problem solving skills so that you will be able to take important decisions and find perfect solutions to the problems when required especially in the benfit of the organization.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod16() {
+                  var modal = document.getElementById("myModal16");
+                  var span = document.getElementsByClassName("close16")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+              <div class="card_item">
+                <div class="card_inner">
+                  <div class="card_top">
+                    <a href="#" onclick="mod17(); return false;"><img id="card" src="sm-1.jpg" alt="Introduction to Social Media Marketing"/></a>
+                  </div>
+                  <div class="card_bottom">
+                    <div class="card_category">
+                      Marketing
+                    </div>
+                    <div class="card_info">
+                      <p class="title"><a href="#" onclick="mod17(); return false;" style="text-decoration: none;">Introduction to Social Media Marketing</a></p>
+                      <p>
+                        A course to learn the basics of Social Media Marketing.
+                      </p>
+                    </div>
+                    <div class="card_creator">
+                      By Nishit Verma
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myModal17" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                        <span class="close17" id="close" style="color: rgb(255, 255, 255); margin-top: 3%;">&times;</span>
+                        <h2 style="margin-top: 3%;">Introduction to Social Media Marketing</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div id="d3" style="float: left; max-width: 40%;">
+                        <img src="sm-1.jpg" alt="Introduction to Social Media Marketing" width="384px" height="216px" style="float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 5%;"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Price : ₹350</p>
+                        <button id="btn3" name="btn3" value="Buy Now" onclick="window.location.href = 'payment.html'">Buy Now</button>
+                      </div>
+                        <h2>About the Course</h2>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Now a days Social Media has been a major source of communication between the organizations and consumers. To bolster this relation and benefit from it, we must know how to work with that wisely in terms of marketing. Here comes the term "Social Media Marketing".<br>This course lays the foundation of social media marketing. You’ll learn what social media marketing entails, including the history and the different social media channels that exist. You’ll learn how to select a social media channel that fits your needs, set goals and success metrics, and determine who your target audience is.</p>
+                        <p style="margin-top: 1%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Instructor :</b> Nishit Verma</p>
+                      </div>
+                  </div>
+            </div>
+            <script>
+        
+                function mod17() {
+                  var modal = document.getElementById("myModal17");
+                  var span = document.getElementsByClassName("close17")[0];
+                  modal.style.display = "block";
+                
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  }
+        
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+            </div>
+          </div>
+
+    <div id="Contact">
+      <h1 class="ml14">
+        <span class="text-wrapper">
+          <span class="letters" style="color: white;">Course Shop App</span>
+          <span class="line"></span>
+        </span>
+      </h1><br>
+      <script>
+        var textWrapper = document.querySelector('.ml14 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+          targets: '.ml14 .line',
+          scaleX: [0,1],
+          opacity: [0.5,1],
+          easing: "easeInOutExpo",
+          duration: 900
+        }).add({
+          targets: '.ml14 .letter',
+          opacity: [0,1],
+          translateX: [40,0],
+          translateZ: 0,
+          scaleX: [0.3, 1],
+          easing: "easeOutExpo",
+          duration: 800,
+          offset: '-=600',
+        delay: (el, i) => 150 + 25 * i
+        }).add({
+          targets: '.ml14',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+      </script>
+      <a href="https://www.facebook.com/education4ol4" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+      <a href="https://www.linkedin.com/company/education-4-ol/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+      <a href="https://www.instagram.com/education_4_ol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;<br>
+      <p>Educa</p>
+    </div>
+    </body>
+</html>

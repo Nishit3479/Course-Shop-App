@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="style.css">
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: linear-gradient(to right,#000000,#5a5157,#000000);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav" style="margin-left: 35%;">
+            <a href="home.html">Home</a>&emsp;
+            <a href="About2.html">About us</a>&emsp;
+            <a href="home.html#Contact">Contact</a>&emsp;
+            <a class="active" href="profile.html"><i style="font-size:24px" class="fa">&#xf2be;</i></a>
+        </div>
+
+        <div id="d2">
+            <div class="topnav2" style="margin-left: 30%; max-width: 40%; float: left;">
+                <a class="active" href="profile.html">Personal Info</a>&emsp;
+                <a href="history.html">Purchase History</a>&emsp;
+            </div>
+            <a href="#" onclick="mod(); return false;" style="float: right;"><i style="font-size:48px; margin-top: 10%;" id="icon2" class="fa">&#xf08b;</i></a><br><br><br>
+            <i id="icon1" class="material-icons" style="font-size:80px;color:black">&#xe7fd;</i>
+            <pre id="info1"><b>Name               &emsp;       :</b>  Nishit Verma</pre>
+            <pre id="info1"><b>User Name            &emsp; :</b>  Nishit</pre>
+            <pre id="info1"><b>Email                          :</b>  nishitverma1312@gmail.com</pre>
+            <pre id="info1"><b>Ph.No                         :</b>  9876543210</pre>
+            <pre id="info1"><b>College/University    :</b>  VIT-AP</pre>
+        </div><br><br>
+
+        <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: white; color: black;">
+                <span class="close" style="color: black; margin-top: 7%;">&times;</span>
+                <h2 style="margin-top: 7%; margin-left: 5%;">Are you sure you want to Log Out ?</h2>
+            </div>
+            <div class="modal-body">
+                <button id="btn1" name="btn1" value="Yes" onclick="window.location.href='index.html'">Yes</button>
+                <button id="btn2" name="btn2" value="No">No</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        function mod() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    </body>
+</html>

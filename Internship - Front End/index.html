@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Shop App - Log In</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.scss">
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            function viewpass() {
+              var x = document.getElementById("pass");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div class="topnav" id="topnav">
+            <a class="active" href="index.html">Home</a>&emsp;
+            <a href="About.html">About us</a>&emsp;
+            <a href="#Contact">Contact</a>&emsp;
+        </div>
+        <div id="d">
+          <p id="p1">Welcome To</p>
+          <h1 class="ml15">
+            <span class="text-wrapper">
+              <span class="letters" style="color: white;">Course Shop App</span>
+              <span class="line"></span>
+            </span>
+          </h1><br>
+          <p id="p2">Explore a whole new world of learning..!!</p>
+        </div>
+    <div id="d1">
+    <form method="POST">
+        <H1 id="head1">Log In</H1>
+        <input type="text" id="uname" name="uname" placeholder="User Name" required><br><br>
+        <input type="password" id="pass" name="pass" placeholder="Password" required><br><br>
+        <input type="checkbox" id="sp" onclick="viewpass()">Show Password<br><br>
+        <input type="submit" id="bt1" name="bt1" class="bt1" value="Log In" onclick="window.location.href='home.html'"/>
+        <p id = pr style="text-align : center">Not Registered ? <a href="signup.html" style="text-decoration: none; color: red;">Register Now</a></p>
+        <p id= pr style="text-align : center"><a href="fp.html" style="text-decoration: none; color: red;">Forgot Password ?</a></p>
+    </form>
+    </div><br><br><br><br>
+
+    <div id="Contact">
+        <h1 class="ml14">
+          <span class="text-wrapper">
+            <span class="letters" style="color: white;">Course Shop App</span>
+            <span class="line"></span>
+          </span>
+        </h1><br>
+        <script>
+          var textWrapper = document.querySelector('.ml14 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+          anime.timeline({loop: true})
+          .add({
+            targets: '.ml14 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeInOutExpo",
+            duration: 900
+          }).add({
+            targets: '.ml14 .letter',
+            opacity: [0,1],
+            translateX: [40,0],
+            translateZ: 0,
+            scaleX: [0.3, 1],
+            easing: "easeOutExpo",
+            duration: 800,
+            offset: '-=600',
+          delay: (el, i) => 150 + 25 * i
+          }).add({
+            targets: '.ml14',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
+        <a href="https://www.facebook.com/education4ol4" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.linkedin.com/company/education-4-ol/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.instagram.com/education_4_ol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;<br>
+        <p>Educa</p>
+      </div>
+    </body>
+    <!--<a href="profile.html"><i id="icon1" class="material-icons">&#xe7fd;</i></a>-->
+</html>

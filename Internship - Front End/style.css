@@ -1,0 +1,623 @@
+body{
+    background-image: url('image-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+#head1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#d{
+    float: left;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin-top: 10%;
+    margin-left: 10%;
+    padding :  2% 5% 4% 5%;
+    border-radius: 3%;
+}
+#p1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+#p2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0%;
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#name, #cno, #col, #uname{
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pass, #pass1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+#email{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+#sp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#bt1{
+    text-align: center;
+    margin-left: 30%;
+    width: 40%;
+    padding: 12px 2px;
+    font-size: 17px;
+    background-color: black; 
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#bt1:hover{
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#bt2{
+  text-align: center;
+  width: 8%;
+  padding: 12px 2px;
+  margin-left: 88%;
+  font-size: 15px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 0.5rem;
+  background-color: black; 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+#bt2:hover{
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#pr{
+    font-size: 14px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#d1{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-left: 60%;
+    margin-right: 15%;
+    padding : 2% 2% 2% 2%;
+    border-radius: 3%;
+}
+#d1:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#icon1{
+  color: white;
+}
+.topnav{
+    position: sticky;
+    top:0;
+    }
+	.topnav {
+ 			  overflow: hidden;
+        margin-left: 40%;
+        background-color: transparent;
+			}
+            .topnav a {
+                float: left;
+                display: block;
+                color: #ffffff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                border-bottom: 3px solid transparent;
+              }
+              
+              .topnav a:hover {
+                border-bottom: 3px solid rgb(255, 255, 255);
+              }
+              
+              .topnav a.active {
+                border-bottom: 3px solid rgb(255, 0, 0);
+              }
+
+#About{
+    background-color: rgb(0, 0, 0, 0.2);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding :  2% 5% 4% 5%;
+    border-radius: 3%;
+}
+#Contact{
+    background-color: rgb(0, 0, 0, 1);
+    padding :  2% 5% 4% 5%;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+#card {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  width: 25%;
+  padding: 10px;
+}
+
+.cards_wrap .card_inner {
+  background: rgb(255, 255, 255);
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 15px;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px dashed #0071bc;
+}
+
+.cards_wrap .card_bottom .card_info .title {
+  color: #0071bc;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cards_wrap .card_bottom .card_creator {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}
+#head2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1%;
+    color: white;
+}
+#contact{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+}
+#typing {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing {
+    width: 30ch;
+    animation: typing 4s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: white;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  #d2{
+    background-color: rgb(255, 255, 255);
+    margin-top: 4.2%;
+    margin-left: 15%;   
+    margin-right: 15%;
+    padding : 2% 2% 2% 2%;
+    border-radius: 0.5rem;
+    height: 550px;
+}
+#d2:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.topnav2{
+    position: sticky;
+    top:0;
+    }
+	.topnav2 {
+ 			overflow: hidden;
+             margin-left: 40%;
+			}
+
+            .topnav2 a {
+                float: left;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                border-bottom: 3px solid transparent;
+              }
+              
+              .topnav2 a:hover {
+                border-bottom: 3px solid rgb(0, 0, 0);
+              }
+              
+              .topnav2 a.active {
+                border-bottom: 3px solid rgb(255, 0, 0);
+              }
+#info1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+#tb{
+    text-align: left;
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+th{
+    background-color: #000000;
+    color: white;
+    padding: 12px 2px;
+}
+td{
+    font-size: 20px;
+}
+tr:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  height: 40%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: white;
+}
+
+#btn1{
+  text-align: center;
+  width: 20%;
+  padding: 12px 2px;
+  margin-top: 5%;
+  margin-left: 20%;
+  max-width: 45%;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: black; 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+#btn1:hover{
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#btn2{
+  text-align: center;
+  width: 20%;
+  padding: 12px 2px;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: black; 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+#btn2:hover{
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#d3{
+  background-color: rgb(255, 255, 255);
+  margin-top: 1%;
+  margin-left: 2%;   
+  margin-right: 2%;
+  margin-bottom: 0%;
+  padding : 2% 2% 2% 2%;
+  border-radius: 0.5rem;
+}
+#d3:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#btn3{
+  text-align: center;
+  width: 40%;
+  padding: 12px 2px;
+  font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 0.5rem;
+  background-color: black; 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+#btn3:hover{
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml15 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml15 .text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.ml15 .line {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml15 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.bt3{
+  text-align: center;
+  width: 35%;
+  padding: 12px 2px;
+  margin-left: 10%;
+  max-width: 35%;
+  font-size: 17px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+.bt3:hover{
+  background-color: #33ff00;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bt4{
+  text-align: center;
+  width: 35%;
+  padding: 12px 2px;
+  margin-left: 10%;
+  max-width: 35%;
+  font-size: 17px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 0.5rem;
+  background-color: black; 
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+.bt4:hover{
+  background-color: #ff0000;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.payment{
+  background-color: rgb(255, 255, 255);
+  margin : 10% 30% 14.2% 30%;
+  padding : 2% 2% 2% 2%;
+  border-radius: 0.5rem;
+}
+.payment:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#cname{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+#dnum{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+#expmonth{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+#expyear{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+#cvv{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Shop App - About</title>
+        <link rel="stylesheet" href="style.css">
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <style>
+            body{
+              background-image: url("image-9.jpg")
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).on('scroll', function(){
+              if ( $(window).scrollTop() > 10) {
+                $("#topnav a").css("background-color", "rgb(0,0,0,0.5");
+                $("#topnav a").css("color", "rgb(255,255,255,1");
+                $("#topnav a i").css("color", "rgb(255,255,255,1");
+              } else {
+                $("#topnav a").css("background-color", "transparent");
+              }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="topnav"  id="topnav" style="margin-left: 35%;">
+            <a href="home.html">Home</a>&emsp;
+            <a class="active" href="About2.html">About us</a>&emsp;
+            <a href="#Contact">Contact</a>&emsp;
+            <a href="profile.html"><i style="font-size:24px" class="fa">&#xf2be;</i></a>
+        </div>
+
+    <div id="About">
+        <p style="font-size: 25px; color: white; font-family: Arial, Helvetica, sans-serif;"><b>Products and services</b></p>
+        <p style="font-size: 20px; color: white;">This platform enables the users to learn new things by allowing them to buy the courses from a list of many available courses at a very low price. All the courses are well designed and they have adequate content to make you understand the respective topic well.<br>
+        <br>1.Products:<br>
+        1.1 Course Shop App<br>
+        <br>2.Services:<br>
+        2.1 Teaching with multimedia learning content.<br>
+        2.2 Printed and Hand Written notes on demand.<br>
+        2.3 Parallelly running lab works or assignments to provide hands on experience.<br>
+        2.4 Online helpline for doubt clarifications.<br>
+        2.5 Online Quiz Platform with Standard Questions for evaluation as the course progresses.<br><br>
+        <p style="font-size: 25px; color: white; font-family: Arial, Helvetica, sans-serif;"><b>History</b></p>
+        <p style="font-size: 20px; color: white;">Course Shop App was developed by Nishit Verma as a part of his web development internship under Education 4 ol. This web site is made using HTML, CSS and JS in the front-end.</p>
+    </div><br><br><br><br>
+
+    <div id="Contact">
+        <h1 class="ml14">
+          <span class="text-wrapper">
+            <span class="letters" style="color: white;">Course Shop App</span>
+            <span class="line"></span>
+          </span>
+        </h1><br>
+        <script>
+          var textWrapper = document.querySelector('.ml14 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+          anime.timeline({loop: true})
+          .add({
+            targets: '.ml14 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeInOutExpo",
+            duration: 900
+          }).add({
+            targets: '.ml14 .letter',
+            opacity: [0,1],
+            translateX: [40,0],
+            translateZ: 0,
+            scaleX: [0.3, 1],
+            easing: "easeOutExpo",
+            duration: 800,
+            offset: '-=600',
+          delay: (el, i) => 150 + 25 * i
+          }).add({
+            targets: '.ml14',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
+        <a href="https://www.facebook.com/education4ol4" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.linkedin.com/company/education-4-ol/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;
+        <a href="https://www.instagram.com/education_4_ol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 50px;"></i></a>&emsp;<br>
+        <p>Educa</p>
+      </div>
+    </body>
+</html>
